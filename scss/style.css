@@ -128,7 +128,7 @@ body {
 
 .list__item {
   color: #4f7df3;
-  padding: 0 20px;
+  padding: 15px;
 }
 
 .footer {
@@ -175,6 +175,13 @@ body {
   }
   .container__picture {
     width: 50%;
+  }
+  .list__item:hover {
+    background-color: #4f7df3;
+    color: #ffffff;
+    border-radius: 75%;
+    -webkit-transition: 0.2s ease-in all;
+    transition: 0.2s ease-in all;
   }
 }
 
