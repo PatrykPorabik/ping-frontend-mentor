@@ -1,0 +1,77 @@
+@import 'variables';
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+    font-size: $basesize;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    &__title {
+        color: $gray;
+        font-size: 1.9rem;
+        font-weight: 300;
+        &--highlight {
+            color: #000000;
+            font-weight: 700;
+        }
+    }
+    &__subtitle {
+        font-size: 1rem;
+    }
+}
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__input {
+        width: 80%;
+        border: 1px solid $secondaryblue;
+        border-radius: 50px;
+        padding: 15px;
+        margin: 20px 0 10px;   
+        &::placeholder {
+            color: $gray;
+            opacity: 0.6;
+        }
+    }
+    
+    &__button {
+        width: 90%;
+        background-color: $primaryblue;
+        border: 1px solid $primaryblue;
+        border-radius: 50px;
+        color: #ffffff;
+        box-shadow: $shadow;
+        margin: 10px 0;
+        padding: 15px;
+    }
+}
+.logo {
+    text-align: center;
+    width: 20%;
+    margin: 1.5rem;
+}
+.container {
+    margin: 50px 0;
+    &__picture {
+        width: 100%;
+    }
+}
+.footer {
+    color: $gray;
+    text-align: center;
+    font-size: 1rem;
+    &__link {
+        color: $primaryblue;
+        display: inline;
+        text-decoration: none;
+    }
+}
