@@ -143,6 +143,7 @@ body {
   text-align: center;
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
+  margin-top: 35px;
 }
 
 .notification__text {
@@ -232,6 +233,21 @@ body {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .newsletter__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .newsletter__alert {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .logo {
     margin-top: 50px;

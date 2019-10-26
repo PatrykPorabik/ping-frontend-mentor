@@ -14,8 +14,6 @@ function validateEmail(field) {
 }
 
 function isValidEmail(field) {
-    if (field === "") return false;
-
     if (validateEmail(field.value)) {
         field.classList.add('newsletter__input--valid');
         field.classList.remove('newsletter__input--invalid');
