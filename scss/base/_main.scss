@@ -33,6 +33,10 @@ body {
     &__form {
         width: 100%;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     &__input {
         width: 80%;
@@ -64,6 +68,7 @@ body {
         padding: 15px;
         cursor: pointer;
         transition: 0.2s ease-in all;
+        order: 2;
     }
     &__button:hover {
         opacity: 0.9;
@@ -71,10 +76,19 @@ body {
     &__alert {
         color: $secondaryred;
         font-size: 0.8rem;
-        margin: 0 25rem 0 0;
-        display: flex;
-        justify-content: center;
+        margin: 0;
     }
+
+}
+.notification {
+    text-align: center;
+    transition: 0.2s ease all;
+    &__text {
+        color: green;
+    }
+}
+.visible {
+    display: block;
 }
 .none {
     display: none;
@@ -118,6 +132,13 @@ body {
         &__input {
             width: 20%;
             align-self: center;
+        }
+        &__alert {
+            color: $secondaryred;
+            font-size: 0.8rem;
+            margin: 0 25rem 0 0;
+            display: flex;
+            justify-content: center;
         }
         &__button {
             width: 10%;
