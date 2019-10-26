@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +20,11 @@
     </div>
   </header>
   <section class="newsletter">
+    <form class="newsletter__form" id="newsletter-form">
       <input type="email" name="email" id="email" class="newsletter__input" placeholder="Your email address...">
-    <button class="newsletter__button" id="button">Notify Me</button>
+      <button class="newsletter__button" type="submit" id="button">Notify Me</button>
+      <p class="none">Please provide a valid email address</p>
+    </form>
   </section>
   <div class="container">
     <img src="images/illustration-dashboard.png" class="container__picture" alt="Dashboards illustration">
@@ -35,9 +39,12 @@
   <footer class="footer">
     <p class="footer__attribution">&copy; Copyright Ping. All rights reserved.</p>
     <p class="footer__attribution">
-      Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>
+      Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+        Mentor</a>.<br>
       Coded by <a class="footer__link" href="http://porabik.pl">Patryk Porabik</a>.
     </p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
